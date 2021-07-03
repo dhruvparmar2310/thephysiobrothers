@@ -1443,6 +1443,26 @@ section {
   color: #fff;
 }
 
+
+/* Advance Box */
+.advance-box{
+  color: #fff;
+  background: #3fbbc0;
+  width: 100%; 
+}
+
+.advance-box .card-title{
+  color: #000;
+  text-align: center;
+}
+
+.advance-box-design{
+  padding: 5px;
+  margin-right: 2px;
+  float: left;
+}
+
+
 /*--------------------------------------------------------------
 # Frequently Asked Questioins
 --------------------------------------------------------------*/
