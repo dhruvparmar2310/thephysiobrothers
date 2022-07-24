@@ -200,6 +200,26 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
       </div>
     </section><!-- End About Us Section -->
 
+        <!-- ======= Article Section ======= -->
+    <section id="article" class="article bg-dark">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 data-bs-toggle="tooltip" title="Article | ThePhysioBrothers">Article</h2>
+        </div>
+
+        <figure class="row container" id="zoom-in">
+          <img src="assets/img/article.jpg" alt="Article of ThePhysioBrothers" class="container img-fluid">
+        </figure>
+
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="assets/img/article.jpg">
+        </div>
+
+      </div>
+    </section><!-- End Article Section -->
+
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
       <div class="container" data-aos="fade-up">
@@ -386,7 +406,7 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100" data-bs-toggle="tooltip" title="Dr. Darshan P. Parmar | CEO of ThePhysioBrothers | Consultant Physiotherapist | Jamnagar">
               <div class="member-img">
-                <img src="assets/img/doctors/darshan-1.jpeg" class="img-fluid" alt="">
+                <img src="assets/img/dr-darshan.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href="https://www.facebook.com/darshan.parmar.188478" target="/blank"><i class="bi bi-facebook"></i></a>
                   <a href="https://instagram.com/dutt.parmar?utm_medium=copy_link" target="/blank"><i class="bi bi-instagram"></i></a>
@@ -696,6 +716,18 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
 
   <div id="preloader"></div>
   <a href="#" data-bs-toggle="tooltip" title="Go to Top" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script type="text/javascript">
+    document.querySelectorAll('.article img').forEach(image =>{
+      image.onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = image.getAttribute('src');    
+      }
+    });
+    document.querySelector('.popup-image span').onclick = () =>{
+      document.querySelector('.popup-image').style.display = 'none';
+    }
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
