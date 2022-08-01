@@ -21,6 +21,9 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
   <link href="assets/img/logo.jpg" rel="icon">
   <link href="assets/img/main-logo.png" rel="apple-touch-icon">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -139,9 +142,9 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400" data-bs-toggle="tooltip" title="Yoga | ThePhysioBrothers">
-              <div class="icon"><i class="fas fa-heartbeat"></i></div>
+              <div class="icon"><i class="fa-solid fa-person-walking"></i></div>
               <h4 class="title"><a href="">Yoga</a></h4>
-              <p class="description">Meditation, Pranayam, Power Yoga</p>
+              <p class="description">Meditation, Pranayam, Power Yoga, Stretching</p>
             </div>
           </div>
 
@@ -204,7 +207,7 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
     <section id="article" class="article bg-dark">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
+        <!--<div class="section-title">
           <h2 data-bs-toggle="tooltip" title="Article | ThePhysioBrothers">Blogs</h2>
         </div>
 
@@ -215,7 +218,58 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
         <div class="popup-image">
           <span>&times;</span>
           <img src="assets/img/article.jpg">
-        </div>
+        </div>-->
+
+          <div class="section-title" style="margin-bottom: 30px;">
+            <h2 data-bs-toggle="tooltip" title="Article | ThePhysioBrothers">Blogs</h2>
+          </div>
+
+          <div class="container">
+            <!-- Full-width images with number text -->
+            <div class="mySlides text-center">
+              <div class="numbertext">1 / 3</div>
+                <img src="assets/img/article.jpg" class="img-fluid" style="width: auto">
+            </div>
+
+            <div class="mySlides text-center">
+              <div class="numbertext">2 / 3</div>
+                <img src="assets/img/article-2.jpg" class="img-fluid" style="width:auto">
+            </div>
+
+            <div class="mySlides text-center">
+              <div class="numbertext">3 / 3</div>
+                <img src="assets/img/article-3.jpg" class="img-fluid" style="width:auto">
+            </div>
+
+            <div class="popup-image">
+              <span>&times;</span>
+              <img src="assets/img/article.jpg">
+            </div>
+
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Image text -->
+          <div class="caption-container">
+            <p id="caption" class="my-1"></p>
+          </div>
+
+          <!-- Thumbnail images -->
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="assets/img/article.jpg" style="width:100%; height: 70%" onclick="currentSlide(1)" alt="Article | Dr.Darshan P. Parmar">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="assets/img/article-2.jpg" style="width:100%; height: 70%" onclick="currentSlide(2)" alt="Article | Dr.Riya A. Mehta">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="assets/img/article-3.jpg" style="width:100%; height: 70%" onclick="currentSlide(3)" alt="Article | Dr.Riya A. Mehta">
+            </div>
+        
+          </div>
 
       </div>
     </section><!-- End Article Section -->
@@ -239,7 +293,7 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
             <div class="count-box card">
               <i class="far fa-hospital"></i>
               <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Patient Treated</strong></p>
+              <p><strong>Patients Treated</strong></p>
             </div>
           </div>
 
@@ -289,7 +343,7 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
             <p class="description">Paralysis, Parkinson Disease, Cerebral Palsy, DMD</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon"><i class="fas fa-heartbeat"></i></div>
+            <div class="icon"><i class="fa-solid fa-person-walking"></i></div>
             <h4 class="title"><a href="#">Yoga</a></h4>
             <p class="description">Meditation, Pranayam, Power Yoga</p>
           </div>
@@ -451,25 +505,111 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
 
         <div class="gallery-slider swiper-container">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/g1.jpeg"><img src="assets/img/gallery/g1.jpeg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/g2.jpeg"><img src="assets/img/gallery/g2.jpeg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/g3.jpeg"><img src="assets/img/gallery/g3.jpeg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/g4.jpeg"><img src="assets/img/gallery/g4.jpeg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/g5.jpeg"><img src="assets/img/gallery/g5.jpeg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/g6.jpeg"><img src="assets/img/gallery/g6.jpeg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/g7.jpeg"><img src="assets/img/gallery/g7.jpeg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/g8.jpeg"><img src="assets/img/gallery/g8.jpeg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/g9.jpeg"><img src="assets/img/gallery/g9.jpeg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/g10.jpeg"><img src="assets/img/gallery/g10.jpeg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/g11.jpeg"><img src="assets/img/gallery/g11.jpeg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/g12.jpeg"><img src="assets/img/gallery/g12.jpeg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/g13.jpeg"><img src="assets/img/gallery/g13.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/g1.jpeg">
+                <img src="assets/img/gallery/g1.jpeg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/g2.jpeg">
+                <img src="assets/img/gallery/g2.jpeg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/g3.jpeg">
+                <img src="assets/img/gallery/g3.jpeg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/g4.jpeg">
+                <img src="assets/img/gallery/g4.jpeg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/g5.jpeg">
+                <img src="assets/img/gallery/g5.jpeg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/g6.jpeg">
+                <img src="assets/img/gallery/g6.jpeg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/g7.jpeg">
+                <img src="assets/img/gallery/g7.jpeg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/g8.jpeg">
+                <img src="assets/img/gallery/g8.jpeg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/g9.jpeg">
+                <img src="assets/img/gallery/g9.jpeg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/g10.jpeg">
+                <img src="assets/img/gallery/g10.jpeg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/g11.jpeg">
+                <img src="assets/img/gallery/g11.jpeg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/g12.jpeg">
+                <img src="assets/img/gallery/g12.jpeg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="gallery-lightbox" href="assets/img/gallery/g13.jpeg">
+                <img src="assets/img/gallery/g13.jpeg" class="img-fluid" alt="">
+              </a>
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
     </section><!-- End Gallery Section -->
+
+    <!-- ======= mobile Section ======= -->
+    <section id="article" class="article bg-dark" style="height: 130vh;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 data-bs-toggle="tooltip" title="Article | ThePhysioBrothers">Blogs</h2>
+        </div>
+
+        <div class="container center">
+          <div class="mobile">
+            <div class="screen">
+              <img src="assets/img/ios.jpg" class="img-fluid" style="width: auto; height: 75vh;">
+            </div>
+            <div class="home"></div>
+            <div class="inner"></div>
+            
+            <ul class="volume">
+              <li></li>
+              <li></li>
+            </ul>
+            
+            <ul class="silent">
+              <li></li>
+            </ul>
+
+            <ul class="sleep">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Article Section -->
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
@@ -718,7 +858,7 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
   <a href="#" data-bs-toggle="tooltip" title="Go to Top" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <script type="text/javascript">
-    document.querySelectorAll('.article img').forEach(image =>{
+    /*document.querySelectorAll('.article img').forEach(image =>{
       image.onclick = () =>{
         document.querySelector('.popup-image').style.display = 'block';
         document.querySelector('.popup-image img').src = image.getAttribute('src');    
@@ -726,6 +866,38 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
     });
     document.querySelector('.popup-image span').onclick = () =>{
       document.querySelector('.popup-image').style.display = 'none';
+    }*/
+
+    /* for article*/
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
     }
   </script>
 
