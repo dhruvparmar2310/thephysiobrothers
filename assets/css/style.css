@@ -755,6 +755,7 @@ section {
 
 .featured-services .icon-box:hover::before {
   background: #3fbbc0;
+  transition: 0.5s ease-in-out;
   top: 0;
   border-radius: 0px;
 }
@@ -879,6 +880,12 @@ section {
   filter: grayscale(80%);
 }
 
+@media(max-width: 576px){
+  .about img{
+    filter: grayscale(0);
+  }
+}
+
 .about img:hover{
   filter: grayscale(0);
   transition: 1s;
@@ -957,6 +964,103 @@ section {
     height: 50%;
   }
 }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+@media(max-width:  576px){
+  .mySlides img{
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+  }
+  .numbertext {
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 12px;
+    margin-top:  80px;
+    margin-bottom: 0px;
+  }
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  margin-top: 100px;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #3fbbc0;
+  padding: 2px 16px;
+  color: white;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
 
 /*--------------------------------------------------------------
 # Counts
@@ -1519,6 +1623,150 @@ section {
     transform: scale(1.2);
     margin-top: 10px;
   }
+}
+
+/*--------------------------------------------------------------
+# Mobile Screen
+--------------------------------------------------------------*/
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mobile{
+  width: 276px;
+  height: 580px;
+  background: #fff;
+  border-radius: 30px;
+  border: 3px solid rgba(1, 1, 1, 0.3);
+  box-sizing: border-box;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.screen{
+  position: relative;
+  background: #262626;
+  width: 256px;
+  height: 455px;
+  margin: 58px auto;
+  overflow: hidden;
+}
+
+.screen.active:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 100%;
+  transform: skewX(-5deg) translateX(-50%);
+}
+
+.home{
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border: 2px solid #cecece;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.inner{
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 4px; /*height of noch*/
+  background: #262626;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.inner:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -22px;
+  background: #262626;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.inner:after{
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  background: #262626;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.volume{ /* left side both button */
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 90px;
+  left: -2px;
+}
+
+.volume li{
+  list-style: none;
+  width: 2px;
+  height: 30px;
+  background: #ccc;
+  margin: 10px 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.silent{ /* top left first button */
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50px;
+  left: -2px;
+}
+
+.silent li{
+  list-style: none;
+  width: 2px;
+  height: 20px;
+  background: #ccc;
+  margin: 10px 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.sleep{ /* right side button */
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 90px;
+  right: -2px;
+}
+
+.sleep li{
+  list-style: none;
+  width: 2px;
+  height: 30px;
+  background: #ccc;
+  margin: 10px 0;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 /*--------------------------------------------------------------
