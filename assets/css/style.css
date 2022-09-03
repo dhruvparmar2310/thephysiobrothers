@@ -888,12 +888,13 @@ section {
 }
 
 .about img{
-  margin-top: 60px;
+  margin-top: 3px;
   border-radius: 10px;
   border-width: 2px;
   box-shadow: 5px 10px 30px -5px black;
   filter: grayscale(80%);
   transition: 0.5s ease-in-out;
+  width: 30rem;
 }
 
 @media(max-width: 576px){
