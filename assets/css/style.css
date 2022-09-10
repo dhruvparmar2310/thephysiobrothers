@@ -1222,6 +1222,15 @@ section {
   padding-bottom: 10px;
 }
 
+.article-content .watermark img{
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  width: 50%;
+  opacity: 0.5;
+  display: none;
+}
+
 @media(max-width: 576px){
   .article-content .section-title{
     margin-top: 80px;
@@ -1277,6 +1286,53 @@ section {
   .article-content .inner-content .row #parts > li, #exercises > li{
     font-size: 13px !important;
   }
+}
+
+.article-content .inner-content .share-article{
+  padding-top: 50px;
+} 
+
+.article-content .inner-content .share-article h1{
+  font-size: 23px;
+}
+
+.article-content .inner-content .share-article .social-bg{
+  background-color: var(--new-theme);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.article-content .inner-content .share-article #whatsapp .social-bg:hover{
+  background-color: #18d26e;
+  box-shadow: 0px 0px 5px #444;
+}
+
+.article-content .inner-content .share-article #instagram .social-bg:hover{
+  background-color: #e95950;
+  box-shadow: 0px 0px 5px #444;
+}
+
+.article-content .inner-content .share-article #download .social-bg:hover{
+  background-color: #555;
+  box-shadow: 0px 0px 5px #444;
+}
+
+.article-content .inner-content .share-article .social-bg i{
+  position: absolute;
+  color: white;
+  left: 30%;
+  top: 25%;
+  font-size: 18px;
+}
+
+.article-content .inner-content .share-article ul{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .article-content .breadcrumb{
@@ -1374,6 +1430,117 @@ section {
 
 .article-content .inner-content #text-thumb-treatment i{
   padding-right: 5px;
+}
+
+.article-content .pdf{
+  display: none;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-content .pdf figure{
+  width: 20%;
+}
+
+@media print{
+  body *:not(#article-content):not(#article-content *){
+    visibility: visible;
+  }
+  footer *:not(#article-content):not(#article-content *){
+    visibility: hidden;
+    display: none;
+    height: 0;
+  }
+  #topbar *:not(#article-content):not(#article-content *){
+    visibility: hidden;
+    display: none;
+    height: 0;
+    position: absolute;
+    top: 0;
+  }
+  #header.header-scrolled{
+    display: none;
+    height: 0;
+    position: absolute;
+    top: 0;
+  }
+  #header *:not(#article-content):not(#article-content *){
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    display: none;
+    box-shadow: none;
+    height: 0;
+    position: absolute;
+    top: 0;
+  }
+  #mobile *:not(#article-content):not(#article-content *){
+    height: 0;
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    margin: 0;
+    opacity: 0;
+    top: 0;
+  }
+  #nav *:not(#article-content):not(#article-content *){
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    display: none;
+  }
+  #goup *:not(#article-content):not(#article-content *){
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    display: none;
+  }
+  .article-content .pdf{
+    display: flex;
+  }
+  .article-content figure img{
+    width: 100%;
+    visibility: visible;
+  }
+  #share-article *:not(#article-content):not(#article-content){
+    visibility: hidden;
+    display: none;
+    height: 0;
+  }  
+  .article-content .watermark img{
+    position: absolute;
+    left: 20%;
+    transform: rotate(-30deg);
+    top: 50%;
+    width: 60%;
+    opacity: 0.2;
+    display: block;
+  }
+  .article-content .section-title{
+    margin: 0;
+    padding: 0;  
+  }
+  #article-content{
+    margin: 0 auto;
+    visibility: visible;
+  }
+  section{
+    padding: 0;
+    padding-bottom: 40px;
+    margin: 0 auto;
+  }
+  /* to forcely set to letter or A4 size page */
+  @page {
+    /* margin: 30px; */
+    padding-bottom: 30px;
+  }
 }
 
 /*--------------------------------------------------------------
