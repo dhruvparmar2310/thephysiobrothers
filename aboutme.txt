@@ -1,0 +1,54 @@
+<!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 data-bs-toggle="tooltip" title="About Us | ThePhysioBrothers">About Us</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/about.jpeg" data-bs-toggle="tooltip" title="Dr. Darshan P. Parmar | CEO of ThePhysioBrothers" class="img-fluid" style="height: 350px;" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3 data-bs-toggle="tooltip" title="ThePhysioBrothers">THE PHYSIOBROTHERS</h3><hr/>
+            <p style="text-align: justify-all; padding: 8px; word-spacing: 2px;">
+              <i class="fa-solid fa-badge-check"></i>Myself <b><span data-bs-toggle="tooltip" title="Dr. Darshan P. Parmar | Expert Doctor | CEO of ThePhysioBrothers">Dr. Darshan Prakashbhai Parmar (PT)</span></b>. Experienced Physiotherapist skilled in Neuromuscular Physiotherapy, Physical Therapy, Neurological Disorders, Research, and Neurological Rehabilitation.<br><br>
+
+              Strong healthcare services professional with a <b>Master of Physiotherapy</b> focused in Neurology from Government Physiotherapy College Jamnagar, Gujarat, India . Registered under GSCPT. Registration Number is <b>GPC 10640</b>. Author of 3 Internationally Published Research. <a href="https://www.researchgate.net/profile/Darshan-Parmar-2" target="/blank" data-bs-toggle="tooltip" title="Researches by Dr. Darshan P. Parmar | ThePhysioBrothers">Click Here to view my Research</a>
+            </p><br/>
+            <h3>Skills</h3><hr/>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Orthopedic Rehabilitation</li>
+              <li><i class="bi bi-check-circle"></i> Neurology Rehabilitation</li>
+              <li><i class="bi bi-check-circle"></i> Cardiopulmonary Rehabilitation</li>
+              <li><i class="bi bi-check-circle"></i> Yoga</li>
+              <li><i class="bi bi-check-circle"></i> Dry Needling</li>
+              <li><i class="bi bi-check-circle"></i> Cupping Therapy</li>
+              <li><i class="bi bi-check-circle"></i> Kinovea Software for Gait and Activity of <br> &nbsp;&nbsp;&nbsp; Daily Living Analysis</li>
+              <li><i class="bi bi-check-circle"></i> COVID-19 and Post-COVID Rehab</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    .about img{
+  margin-top: 60px;
+  border-radius: 10px;
+  border-width: 2px;
+  box-shadow: 5px 10px 30px -5px black;
+  filter: grayscale(80%);
+  transition: 0.5s ease-in-out;
+}
+
+@media(max-width: 576px){
+  .about img{
+    filter: grayscale(0);
+  }
+}
+
+.about img:hover{
+  filter: grayscale(0);
+}
