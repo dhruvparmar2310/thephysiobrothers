@@ -16,6 +16,11 @@ Dr. Darshan Parmar (Mpt in Neurological Conditions, Certified NDS, Cupping, Dry 
 Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, Cupping, Dry Needling and Manual Therapist)" name="description">
 
   <meta content="Best physiotherapy,Best physiotherapist,Physiotherapy,Physicaltherapy,E-learning physiotherapy,Physiopedia,Best physiotherapy company,Physiolearning,Physiotherapy Wikipedia, Physiotherapy verified,Best physiotherapy in Jamnagar,Best physiotherapy in Ahmedabad,Dr.Darshan Parmar Jamnagar,Dr.Darshan Parmar(MPT),Dr. Sujay N. Makwana,Physiotherapy Verified Company,ThePhysioBrothers,Physiotherapy by Dr. Darshan P. Parmar,Physiotherapy by Dr. Sujay N. Makwana,Dry Needling by ThePhysioBrothers" name="keywords">
+  <meta property=og:html content="article-2.html" /> 
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content=" Add here Youre Title " />   <!-- your  Title -->
+  <meta property="og:description" content="Add here Youre Description " />  <!-- your  Description -->
+  <meta property="og:image" content="assets/img/blogs/article-2.jpg" />
 
   <!-- Favicons -->
   <link href="assets/img/new-watermark-title.png" rel="icon">
@@ -55,17 +60,17 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
-      <div class="align-items-center d-none d-md-flex">
+      <div class="align-items-center d-none d-md-flex" id="menu">
         <i class="bi bi-clock"></i> Monday - Saturday, 9AM to 9PM
       </div>
-      <div class="d-flex align-items-center">
+      <div class="d-flex align-items-center" id="menu">
         <i class="bi bi-phone"></i> Call us now :<a href="tel:7984377793" style="color: #fff;">&nbsp;&nbsp;+91 79843 77793</a>
       </div>
     </div>
   </div>
 
   <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none mt-3"><i class="icofont-navigation-menu"></i></button>
+  <button type="button" class="mobile-nav-toggle d-xl-none mt-3" id="mobile"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -98,11 +103,18 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
     <!-- ======= Article Content ======= -->
     <section id="article-content" class="article-content">
       <div class="container" data-aos="fade-up">
-
+        <div class="pdf">
+          <figure id="pdfImg">
+            <img src="assets/img/new-logo-small.png" class="img-fluid">
+          </figure>
+        </div>
+        <div class="watermark" id="watermark">
+          <img src="assets/img/new-logo-small.png" class="img-fluid">
+        </div>
         <div class="section-title"> 
           <h2 data-bs-toggle="tooltip" title="Article | Dr. Riya A. Mehta | ThePhysioBrothers">Article-2</h2>
         
-          <nav aria-label="breadcrumb">
+          <nav aria-label="breadcrumb" id="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="index.html#blogs">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">Article-2</li>
@@ -191,6 +203,14 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
                     </p>
                 </div>
             </div>
+
+            <div class="share-article" id="share-article">
+              <h1><em>Don't Forget to <span style="color: black;">Share this Blog</span>!</em></h1>
+              <ul>
+                <li id="whatsapp"><div class="social-bg"><a href="whatsapp://send?text=https://dhruvparmar2310.github.io/thephysiobrothers/article-2.html" target="_blank" data-action="share/whatsapp/share"><i class="fa-brands fa-whatsapp"></i></a></div></li>
+                <li id="download"><div class="social-bg"><i onclick="print()" target="_blank"><i class="fa-solid fa-download"></i></i></div></li>
+              </ul>
+            </div>
         </div>
 
       </div>
@@ -263,7 +283,7 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" data-bs-toggle="tooltip" title="Go to Top" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" data-bs-toggle="tooltip" title="Go to Top" id="goup" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <script type="text/javascript">
     /*document.querySelectorAll('.article img').forEach(image =>{
@@ -307,6 +327,8 @@ Dr. Sujay Makwana (Consultant Physiotherapist, Founder of Suden Physiotherapy, C
       dots[slideIndex-1].className += " active";
       captionText.innerHTML = dots[slideIndex-1].alt;
     }
+
+    document.getElementById("pdfImg").hidden = false;
   </script>
 
   <!-- Vendor JS Files -->
