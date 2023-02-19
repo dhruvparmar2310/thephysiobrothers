@@ -268,10 +268,11 @@
   /**
    * Blog Slider
    */
-   new Swiper('.blogs-slider', {
+   var swiper = new Swiper('.slide-content', {
     speed: 2000,
     loop: true,
     centeredSlides: true,
+    grabCursor: 'true',
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
@@ -279,11 +280,20 @@
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
-      type: 'bullets',
+      // type: 'bullets',
+      dynamicBullets: true,
       clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     breakpoints: {
       320: {
+        slidesPerView: 1,
+        spaceBetween: 21,
+      },
+      414: {
         slidesPerView: 1,
         spaceBetween: 21
       },
@@ -292,47 +302,47 @@
         spaceBetween: 20
       },
       992: {
-        slidesPerView: 5,
+        slidesPerView: 4,
         spaceBetween: 20
       }
     }
   });
 
   /* new slider for articles after new theme updated */
-  var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 25,
-    loop: true,
-    centerSlide: 'true',
-    fade: 'true',
-    grabCursor: 'true',
+  // var swiper = new Swiper(".slide-content", {
+  //   slidesPerView: 3,
+  //   spaceBetween: 25,
+  //   loop: true,
+  //   centerSlide: 'true',
+  //   fade: 'true',
+  //   grabCursor: 'true',
 
-    /* it will handle pagination */
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
+  //   /* it will handle pagination */
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     clickable: true,
+  //     dynamicBullets: true,
+  //   },
 
-    /* it will handle the next and prev button */
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+  //   /* it will handle the next and prev button */
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
 
-    /* to make responsive breakpoints are needed */
-    breakpoints: {
-      0:{
-        slidesPerView: 1,
-      },
-      520:{
-        slidesPerView: 2,
-      },
-      950:{
-        slidesPerView: 3,
-      },
-    },
-  });
+  //   /* to make responsive breakpoints are needed */
+  //   breakpoints: {
+  //     0:{
+  //       slidesPerView: 1,
+  //     },
+  //     520:{
+  //       slidesPerView: 1,
+  //     },
+  //     950:{
+  //       slidesPerView: 3,
+  //     },
+  //   },
+  // });
 
   /**
    * Initiate gallery lightbox 
